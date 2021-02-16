@@ -1,3 +1,41 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('./fonts/GT-America-Condensed-Bold.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}  
+
 body {
-background: linear-gradient(#06061b, #1c1c3d);
+  background: linear-gradient(#06061b, #1c1c3d);
+  font-family: 'MyWebFont', sans-serif;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.Header__StyleHamburgerMenu {
+  
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.Menu {
+  text-align: right;
+}
+
+.Menu li {
+  display: inline-block;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.85rem;
+}
+
+img {
+  position: absolute;
 }
