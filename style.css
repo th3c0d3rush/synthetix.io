@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; 
 }  
 
 body {
@@ -15,8 +16,23 @@ body {
   color: rgba(255, 255, 255, 0.7)
 }
 
+.LayoutContentContainer {
+  height: 100vh;
+}
+
 .Header__StyleHamburgerMenu {
   
+}
+
+header {
+  height: 100px;
+  padding: 0 50px;
+  border-bottom: 1px solid #332754;
+}
+
+header a img {
+  position: absolute;
+  top: 40px;
 }
 
 a {
@@ -25,15 +41,22 @@ a {
 }
 
 .Menu {
-  text-align: right;
+  display: flex;
+  width: 545px;
+  position: absolute;
+  right: 50px;
+  top: 40px;
 }
 
 .Menu li {
-  display: inline-block;
   list-style-type: none;
   text-transform: uppercase;
-  font-weight: bolder;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  margin-right: 33px;
+}
+
+.Menu li:last-child {
+  margin-right: 0px;
 }
 
 img {
