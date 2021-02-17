@@ -24,10 +24,11 @@ body {
   
 }
 
-header {
+.Header-sc {
+  border-bottom: 1px solid #332754;
   height: 100px;
   padding: 0 50px;
-  border-bottom: 1px solid #332754;
+  position: relative;
 }
 
 header a img {
@@ -35,30 +36,28 @@ header a img {
   top: 40px;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .Menu {
   display: flex;
-  width: 545px;
+  width: 540px;
   position: absolute;
   right: 50px;
-  top: 40px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .Menu li {
   list-style-type: none;
+  margin-right: 33px;
+}
+
+.Menu li a {
+  color: white;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 0.8rem;
-  margin-right: 33px;
 }
 
 .Menu li:last-child {
   margin-right: 0px;
 }
 
-img {
-  position: absolute;
-}
