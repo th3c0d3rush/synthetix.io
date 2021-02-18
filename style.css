@@ -21,7 +21,21 @@ body {
 }
 
 .Header__StyleHamburgerMenu {
-  
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 22px;  
+  height: 16px;
+  position: relative;
+}  
+
+.Header__StyleHamburgerMenu span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: aliceblue;
+}  
+
+.Header__StyleHamburgerMenu span:nth-child(2) {
+  margin: 4px 0;
 }
 
 .Header-sc {
@@ -77,4 +91,12 @@ header a img {
     left: 50%;
     transform: translateX(-50%); 
   }
+}
+
+@media screen and (max-width: 880px) {
+  .Header__StyleHamburgerMenu {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+  }  
 }
