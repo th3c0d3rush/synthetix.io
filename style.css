@@ -57,8 +57,24 @@ header a img {
   font-size: 0.8rem;
 }
 
+.Menu li:hover a {
+  color: rgba(0, 208, 254, 1);
+  transition: .5s ease;
+}
+
 .Menu li:last-child {
   margin-right: 0px;
 }
 
+@media screen and (max-width: 880px) {
+  .Menu li {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 880px) {
+  header a img {
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+}
