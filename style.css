@@ -96,7 +96,7 @@ header a img {
 @media screen and (max-width: 880px) {
   .Header__StyleHamburgerMenu {
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-80%);
     left: -30px;
   }  
 }
