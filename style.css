@@ -37,8 +37,7 @@ header a img {
 }
 
 .Menu {
-  display: flex;
-  width: 540px;
+  width: 555px;
   position: absolute;
   right: 50px;
   top: 50%;
@@ -48,6 +47,7 @@ header a img {
 .Menu li {
   list-style-type: none;
   margin-right: 33px;
+  display: inline-block;
 }
 
 .Menu li a {
@@ -60,4 +60,5 @@ header a img {
 .Menu li:last-child {
   margin-right: 0px;
 }
+
 
