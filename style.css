@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
 }  
 
 .HamburgerMenu {
@@ -58,7 +58,7 @@ body {
 
 .Header__StyleHamburgerMenu.open .HamburgerMenu:first-child {
   background: transparent;
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .Header__StyleHamburgerMenu.open .HamburgerMenu::before {
@@ -68,34 +68,6 @@ body {
 .Header__StyleHamburgerMenu.open .HamburgerMenu::after {
   transform: rotate(-45deg);
 }
-
-/* .Header__StyleHamburgerMenu span:first-child {
-  transform: rotate(-45deg) translate(4px, 7.5px);
-  transition: all .3s ease-in-out;
-}
-
-.Header__StyleHamburgerMenu span:nth-child(2) {
-  top: 8px; 
-}
-
-.Header__StyleHamburgerMenu span:last-child {
-  top: 16px;
-}
-
-.Header__StyleHamburgerMenu.open span:first-child {
-  transform: rotate(45deg) translate(4px, 7.5px);
-  transition: all .3s ease-in-out;
-}
-.Header__StyleHamburgerMenu.open span:nth-child(2) {
-  opacity: 0;
-  transition: .3s ease-in-out;
-}
-
-.Header__StyleHamburgerMenu.open span:last-child {
-  transform: rotate(-45deg) translate(4px, -7.5px);
-  transition: .3s ease-in-out;
-} */
-
 
 .Header-sc {
   border-bottom: 1px solid #332754;
@@ -109,18 +81,45 @@ header a img {
   top: 40px;
 }
 
+.Menu.open {
+  display: flex;
+  position: absolute;
+  height: 1000px;
+  width: 300px;
+  flex-direction: column;
+  left: -130px;
+  top: 550px;
+  transform-origin: 0% 0%;
+  transform: translate(50%, -50%);
+  transition: transform .4s;
+}
+
+.Menu.open li {
+  visibility: visible; 
+  position: relative;
+  margin-bottom: 54px;
+}
+
+.Menu.open li a {
+  font-size: 2rem;
+}
+
+.Menu.open li:first-child {
+  margin-top: 50px;
+}
+
 .Menu {
   width: 555px;
   position: absolute;
   right: 50px;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
 }
 
 .Menu li {
   list-style-type: none;
   margin-right: 33px;
-  display: inline-block;
 }
 
 .Menu li a {
@@ -140,8 +139,8 @@ header a img {
 }
 
 @media screen and (max-width: 880px) {
-  .Menu li {
-    display: none;
+  .Menu {
+    visibility: hidden;
   }
 }
 
