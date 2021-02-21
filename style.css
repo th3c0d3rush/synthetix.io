@@ -81,25 +81,6 @@ header a img {
   top: 40px;
 }
 
-.Menu.open {
- 
-  display: flex;
-  position: relative;
-
- 
-  flex-direction: column;
-  left: -500px;
-  top: 500px;
-  
-  /*transform: translate(10%, 0%);
-  transition: transform .4s; */
-  border: 1px solid wheat;
-}
-
-.Menu.open {
-  background: linear-gradient(#06061b, #1c1c3d);
-}
-
 .Menu.open li {
 
   position: relative;
@@ -110,10 +91,6 @@ header a img {
   font-size: 2rem;
 }
 
-.Menu.open li:first-child {
-  margin-top: 100px;
-}
-
 .Menu {
   width: 555px;
   position: absolute;
@@ -121,6 +98,7 @@ header a img {
   top: 50%;
   transform: translateY(-50%);
   display: flex;
+
 }
 
 .Menu li {
@@ -146,51 +124,48 @@ header a img {
 
 @media screen and (max-width: 880px) {
   .Menu {
-    transition: .5s ease;
-    border: 1px solid wheat;
-
+    transition: all .3s ease-in-out;
     display: flex;
     position: absolute;
-
-
     flex-direction: column;
-    
-    top: 500px;
+    top: 485px;
     left: -555px;
-
-
+    padding-top: 100px;
+    height: 980px;
+    background: linear-gradient(#06061b, #1c1c3d);
   }
 
-  .Menu.open {
-    /* visibility: hidden; */
-    transition: .5s ease;
-    border: 1px solid wheat;
-
-    display: flex;
-    position: absolute;
-
-    left: 0px;
-    width: 100%;
-    flex-direction: column;
-    /*left: -311px;
-    
-    */
-    /* transform: translate(20%, 0%);
-    transition: transform .4s;
-    border: 1px solid wheat; */
-  }
   .Menu li {
     position: relative;
     margin-bottom: 54px;
   }
-  .Menu li:first-child {
-    margin-top: 100px;
-  }
-}
 
-@media screen and (max-width: 880px) {
   .Menu li a {
     font-size: 2rem;
+    margin-left: 20px;
+  }
+  
+  ul.Menu.open {
+    height: 980px;
+  }
+  .Menu.open {
+    /* visibility: hidden; */
+    transition: all .3s ease-in-out;
+    display: flex;
+    position: absolute;
+    top: 485px;
+    left: 0px;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 100px;
+    background: linear-gradient(#06061b, #1c1c3d);
+  }
+  .Menu.open li {
+    position: relative;
+    margin-bottom: 54px;
+  }
+  .Menu.open li a {
+    margin-left: 20px;
   }
 }
 
@@ -214,4 +189,39 @@ header a img {
   .Header__StyleHamburgerMenu {
     display: none;
   }  
+}
+
+@media screen and (min-width: 880px) {
+  .Menu.open {
+    visibility: visible;
+  } 
+  ul.Menu.open {
+    width: 555px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-10px);
+    display: flex;
+    }
+  
+  .Menu.open li {
+    list-style-type: none;
+    margin-right: 33px;
+  }
+  
+  .Menu.open li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  
+  .Menu.open li:hover a {
+    color: rgba(0, 208, 254, 1);
+    transition: .5s ease;
+  }
+  
+  .Menu li:last-child {
+    margin-right: 0px;
+  }
 }
