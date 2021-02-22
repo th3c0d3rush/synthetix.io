@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'MyWebFont';
+  font-family: 'GT America Condensed Bold';
   src: 
-    url('./fonts/GT-America-Condensed-Bold.woff2') format('woff2');
+    url('../fonts/GT-America-Condensed-Bold.woff2') format('woff2');
 }
 
 * {
@@ -12,7 +12,7 @@
 
 body {
   background: linear-gradient(#06061b, #1c1c3d);
-  font-family: 'MyWebFont', sans-serif;
+  font-family: 'GT America Condensed Bold', sans-serif;
   color: rgba(255, 255, 255, 0.7)
 }
 
